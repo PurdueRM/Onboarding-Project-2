@@ -39,7 +39,7 @@ In order to complete this project you will need to download the following softwa
 - Clone the repository using the following command in your terminal:
 
 ```
-git clone https://github.com/RoboMaster-Club/Onboarding-Project-2.git
+git clone https://github.com/PurdueRM/Onboarding-Project-2.git
 ```
 
 ### Part 2: Create Your First CubeMX Project
