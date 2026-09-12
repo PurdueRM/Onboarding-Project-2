@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32 Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/RM2026-Onboarding-2.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+
+            "servertype": "openocd",
+
+            "device": "STM32F103C6",
+
+            "configFiles": [
+                "${workspaceRoot}${/}config${/}openocd_stlink.cfg"
+            ],
+
+            "runToEntryPoint": "main",
+
+            "svdFile": "${workspaceFolder}/STM32F103.svd",
+            "preLaunchTask": "build",
+
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 8
+            },
+        }
+    ]
+} 

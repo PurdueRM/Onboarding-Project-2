@@ -7,8 +7,8 @@
             "osx": {
                 "command": "make -j V=1"
             },
-            "windows": {
-                "command": "mingw32-make -j V=1"
+            "linux": {
+                "command": "make"
             },
             "problemMatcher": [],
             "group": {
@@ -22,10 +22,10 @@
             "osx": {
                 "command": "make clean"
             },
-            "windows": {
-                "command": "rmdir /s /q ${workspaceFolder}\\build"
+            "linux": {
+                "command": "make clean"
             },
-            "problemMatcher": [],
+            "problemMatcher": []
         },
         {
             "label": "build and flash",
@@ -33,8 +33,8 @@
             "osx": {
                 "command": "make flash"
             },
-            "windows": {
-                "command": "mingw32-make flash"
+            "linux": {
+                "command": "make flash"
             },
             "dependsOn": [
                 "build"
